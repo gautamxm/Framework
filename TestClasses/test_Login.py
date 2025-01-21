@@ -1,7 +1,11 @@
 
 from selenium import webdriver
-from LoginPageObject import LoginPage
+from POM import LoginPageObject
 from selenium.webdriver.common.by import By
+
+from POM.LoginPageObject import LoginPage
+
+
 class TestLogin:
     def test_login(self):
         driver = webdriver.Chrome()
